@@ -28,7 +28,7 @@
   "homepage": "https://github.com/koukoudo/sensify#readme",
   "dependencies": {
     "@jpweeks/gltf-loader": "^2.0.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "d3-array": "^2.4.0",
     "d3-scale": "^3.2.1",
     "dotenv": "^8.2.0",
