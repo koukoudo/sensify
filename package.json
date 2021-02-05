@@ -1,0 +1,57 @@
+{
+  "name": "sensify",
+  "version": "1.0.0",
+  "description": "A 3D audio visualizer for Spotify.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server/index.js",
+    "serve": "concurrently \"webpack-dev-server --config ./webpack/dev.js\" \"node ./server/index.js\"",
+    "build": "webpack --config ./webpack/prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koukoudo/sensify.git"
+  },
+  "keywords": [
+    "spotify",
+    "audio",
+    "3d",
+    "three",
+    "visualizer"
+  ],
+  "author": "Nikolaos Anastasopoulos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koukoudo/sensify/issues"
+  },
+  "homepage": "https://github.com/koukoudo/sensify#readme",
+  "dependencies": {
+    "@jpweeks/gltf-loader": "^2.0.0",
+    "axios": "^0.19.2",
+    "d3-array": "^2.4.0",
+    "d3-scale": "^3.2.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-history-api-fallback": "^2.2.1",
+    "file-loader": "^6.0.0",
+    "gltf-webpack-loader": "^1.0.6",
+    "querystring": "^0.2.0",
+    "regenerator-runtime": "^0.13.5",
+    "simplex-noise": "^2.4.0",
+    "three": "^0.116.1",
+    "url-loader": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-loader": "^8.1.0",
+    "concurrently": "^5.2.0",
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2",
+    "webpack-obj-loader": "^1.0.4"
+  }
+}
